@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(65, 56, 44);
+}
+
+.container {
+    width: 80vw;
+    height: 80vh;
+    background-color: rgb(80, 61, 43);
+    margin: 10vh auto;
+}
+
+.box {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 242, 230);
+    padding: 20px 50px;
+    min-height: 300px;
+    max-width: 550px;
+}
+
+.box-container {
+    display: flex;
+    justify-content: center;
+}
+
+.box-input,
+.add-btn {
+    border: 1px solid rgb(80, 61, 43);
+    border-radius: 3px;
+    font-size: 14px;
+    line-height: 160%;
+    padding: 0 10px;
+    outline: none;
+}
+
+.add-btn {
+    margin-left: 10px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(80, 61, 43);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.box-number {
+    font-size: 18px;
+    margin: 10px 0 15px 0;
+    text-align: center;
+}
+
+.task-content {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 450px;
+    border: 1px solid rgb(80, 61, 43);
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.heart-icon,
+.red-heart {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.red-heart {
+    left: 50%;
+    color: red;
+    display: none;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.notification {
+    display: block;
+    position: absolute;
+    top: -20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    text-align: center;
+    font-weight: bold;
+    padding: 4px;
+    color: white;
+    transition: 0.1s;
+}
+
+.green-bgc {
+    background-color: rgb(146, 243, 146);
+    color: rgb(44, 43, 43);
+}
+
+.red-bgc {
+    background-color: rgb(219, 72, 72);
+}
+
+.counter {
+    font-weight: bold;
+}
